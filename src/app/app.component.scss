@@ -1,0 +1,33 @@
+.card-subtitle{
+    font-weight: 300;
+}
+
+.info-content{
+    display: flex;
+    align-items: center;
+}
+
+.stimation-info{
+    font-size: 12px;
+    display: grid;
+    label{
+        margin: 0px;
+    }
+}
+
+.more-info{
+    font-size: 13px;
+    label{
+        font-variant: all-petite-caps;
+        padding: 0px 4px;
+        margin: 0px;
+    }
+    strong{
+        font-size: 10px;
+        color: rgb(241, 93, 70);
+    }
+}
+
+i{
+    margin-right: 5px;
+}

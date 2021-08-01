@@ -24,17 +24,17 @@
           </div>
           <div class="col-6">
             <label><i class="bi bi-sunrise"></i>Sunrise</label>
-          <strong>{{ sunrise | date:'mediumTime' }}</strong>
+          <strong>{{ data.sys.sunrise * 1000 | date:'mediumTime' }}</strong>
           </div>
         </div>
         <div class="row more-info text-muted mt-2">
           <div class="col-6">
             <label><i class="bi bi-speedometer2"></i>Pressure</label>
-            <strong>{{ data.main.pressure }}hPa</strong>
+            <strong>{{ data.main.pressure}}hPa</strong>
           </div>
           <div class="col-6">
           <label><i class="bi bi-sunset"></i>Sunset</label>
-          <strong>{{ sunset | date:'mediumTime'}}</strong>
+          <strong>{{ data.sys.sunset * 1000 | date:'mediumTime'}}</strong>
           </div>
         </div>
         </div>

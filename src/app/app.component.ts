@@ -28,9 +28,5 @@ export class AppComponent {
          console.log(res)
         });
      });
-
-
-     this.sunrise = new Date(1627210359 *1000);
-     this.sunset = new Date(1627247236 *1000);
   }
 }

@@ -16,17 +16,30 @@ export class AppComponent {
   sunrise: Date;
   sunset: Date;
 
+  latitude: any;
+  longitude: any;
+
 
   constructor(private weatherService: WeatherService) { };
 
   ngOnInit(){
      timer(0,1000).subscribe(() => {
        this.date = new Date;
-       this.weatherService.getWeather()
-       .subscribe((res) => {
+       this.weatherService.getWeather().subscribe((res) => {
          this.data = res;
          console.log(res)
         });
      });
+    
+     this.getLocation();
   }
+
+  getLocation() {
+    this.weatherService.getPosition().then(pos => {
+        this.latitude = pos.lat;
+        this.longitude = pos.lng;
+        console.log(this.latitude , this.longitude)
+    });
+}
+
 }

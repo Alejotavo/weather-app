@@ -1,31 +1,39 @@
-.card-subtitle{
-    font-weight: 300;
+.weather-app{
+    h1,h2,h3,h4,h5,h6{
+        font-weight: 200;
+    }
 }
 
 .info-content{
     display: flex;
     align-items: center;
+    h1{
+        font-size: 4.2rem;
+    }
 }
 
 .stimation-info{
     font-size: 12px;
-    display: grid;
-    label{
-        margin: 0px;
-    }
+    color: #8a8a8a;
 }
 
 .more-info{
     font-size: 13px;
-    label{
-        font-variant: all-petite-caps;
-        padding: 0px 4px;
-        margin: 0px;
-    }
-    strong{
-        font-size: 10px;
-        color: rgb(241, 93, 70);
-    }
+    text-align: center;
+    div {
+        display: grid;
+        line-height: normal;
+            label{
+                font-variant: all-petite-caps;
+                margin: 0px;
+            }
+            .value{
+                font-size: 1.5rem;
+                font-weight: 200;
+                color: #f15d46;
+                color: rgb(241, 93, 70);
+            }
+        }
 }
 
 i{

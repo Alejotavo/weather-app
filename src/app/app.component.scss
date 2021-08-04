@@ -1,7 +1,10 @@
 .weather-app{
-    h1,h2,h3,h4,h5,h6{
+    h1,h2,h4,h5,h6{
         font-weight: 200;
     }
+}
+.card-title{
+    font-weight: 400;
 }
 
 .info-content{
@@ -28,10 +31,9 @@
                 margin: 0px;
             }
             .value{
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 font-weight: 200;
                 color: #f15d46;
-                color: rgb(241, 93, 70);
             }
         }
 }

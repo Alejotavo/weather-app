@@ -34,6 +34,16 @@
           <label class="value">{{ data.sys.sunset * 1000 | date:'mediumTime'}}</label>
           </div>
         </div>
+        <div class="row more-info text-muted mt-4">
+          <div class="col-6">
+            <label><i class="bi bi-eye"></i>Visibility</label>
+            <label class="value">{{ data.visibility / 1000}}Km</label>
+          </div>
+          <div class="col-6">
+          <label><i class="bi bi-wind"></i>Wind Speed</label>
+          <label class="value">{{ data.wind.speed }}m/s</label>
+          </div>
+        </div>
         </div>
       </div>
     </div>
